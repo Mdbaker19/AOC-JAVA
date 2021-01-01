@@ -38,11 +38,16 @@ public class Day2 {
         int w = Integer.parseInt(sizes[1]);
         int h = Integer.parseInt(sizes[2]);
 
-        int a1 = 2 * (l * w);
-        int a2 = 2 * (l * h);
-        int a3 = 2 * (h * w);
+//        int a1 = 2 * (l * w);
+//        int a2 = 2 * (l * h);
+//        int a3 = 2 * (h * w);
+//
+//        return (a1 + a2 + a3);
+        //PART ONE
 
-        return (a1 + a2 + a3);
+        //PART TWO
+        return l * w * h;
+
     }
 
     public static int getSmallestSide(String[] sizes){
@@ -50,9 +55,14 @@ public class Day2 {
         int w = Integer.parseInt(sizes[1]);
         int h = Integer.parseInt(sizes[2]);
 
-        int a1 = l * w;
-        int a2 = w * h;
-        int a3 = l * h;
+//        int a1 = l * w;
+//        int a2 = w * h;
+//        int a3 = l * h;//PART ONE
+
+        //PART TWO
+        int a1 = 2 * l + 2 * w;
+        int a2 = 2 * w + 2 * h;
+        int a3 = 2 * l + 2 * h;
 
         int currSmallest =  Math.min(a1, a2);
         return Math.min(a3, currSmallest);
